@@ -25,7 +25,8 @@ public class Exercicio2 {
 			case 1:
 				System.out.println("Informe valor: ");
 				valor = le.nextInt();
-				avl.root = avl.inserirH(avl.root, valor);
+				avl.root = avl.inserirAVL(avl.root, valor);
+				avl.atualizaAlturas(avl.root);
 			break;
 			case 2:
 				System.out.println("Apresentação FB dos nós");
